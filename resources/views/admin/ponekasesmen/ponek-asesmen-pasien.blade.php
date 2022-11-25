@@ -20,6 +20,11 @@
             display: none !important;
         }
 
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
         p {
             font-weight: 600;
         }
@@ -76,9 +81,10 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
+                {{-- start tab 1 --}}
                 <div class="tab" id="tab-1">
 
-                    {{-- start tab 1 --}}
+
                     <h3 class="text-center">ASESMEN PASIEN KEBIDANAN DAN KANDUNGAN DI PONEK</h3>
                     <div class="row mt-4">
                         <div class="col-md-2">
@@ -680,7 +686,7 @@
                             <p>1.</p>
                         </div>
                         <div class="col-md-3">
-                            <p>Pemeriksaan umum</p>
+                            <h4>Pemeriksaan umum</h4>
                         </div>
                     </div>
                     <div class="row">
@@ -791,7 +797,7 @@
                             <p>2.</p>
                         </div>
                         <div class="col-md-3">
-                            <p>Inspeksi</p>
+                            <h4>Inspeksi</h4>
                         </div>
                     </div>
                     <div class="row">
@@ -920,7 +926,7 @@
                             <p>3.</p>
                         </div>
                         <div class="col-md-3">
-                            <p>Palpasi</p>
+                            <h4>Palpasi</h4>
                         </div>
                     </div>
                     <div class="row mt-2">
@@ -992,7 +998,7 @@
                             <p>4.</p>
                         </div>
                         <div class="col-md-2">
-                            <p>Auskultasi</p>
+                            <h4>Auskultasi</h4>
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -1032,9 +1038,9 @@
                             <p>5.</p>
                         </div>
                         <div class="col-md-2">
-                            <p>Perkusi</p>
+                            <h4>Perkusi</h4>
                         </div>
-                        <div class="col-md-1">:</div>
+
                     </div>
                     <div class="row mt-2">
                         <div class="col-md-1"></div>
@@ -1061,10 +1067,619 @@
                             <input type="text" class="form-control reflek">
                         </div>
                     </div>
+                    <div class="row mt-2">
+                        <div class="col-md-1">
+                            <p>6.</p>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>Laboratorium</h4>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-1"></div>
 
+                        <div class="col">
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-1">
+                            <p>7.</p>
+                        </div>
+                        <div class="col">
+                            <h4>Pemeriksaan Dalam ( Vaginal Thoucher / Rectal Toucher / Inspekulo )</h4>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-1"></div>
 
+                        <div class="col">
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-1">
+                            <p>8.</p>
+                        </div>
+                        <div class="col">
+                            <h4>USG</h4>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-1"></div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-1">
+                            <p>9.</p>
+                        </div>
+                        <div class="col">
+                            <h4>Asesmen Nyeri</h4>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <h5>1.NRS / VA</h5>
+                        <img src="{{asset ('images/NRSVA.png')}}" style="width:800px; height:125px;" alt="">
+                    </div>
+                    <div class="row mt-4">
+                        <h5>2.Wong Baker Face Scale</h5>
+                        <img src="{{asset ('images/wong baker.png')}}" style="width:800px; height:160px;" alt="">
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-3">
+                            <label class="radio-inline">
+                                <input type="radio" name="opt_reflek_patella" >Tidak ada Nyeri (0)
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="radio-inline">
+                                <input type="radio" name="opt_reflek_patella" >Nyeri ringan (1-3)
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="radio-inline">
+                                <input type="radio" name="opt_reflek_patella" >Nyeri sedang (4-6)
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="radio-inline">
+                                <input type="radio" name="opt_reflek_patella" >Nyeri berat (7-10)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <p>Catatan : Bila pasien tidak sadar maka gunakan formulir penilaian nyeri dengan skala BPS (Behavior Pain Scale1)</p>
+                    </div>
+                    <div class="row mt-4">
+                        <h5 class="text-center">BEHAVIOR PAIN SCALE</h5>
+                    </div>
+
+                    <div class="row mt-4">
+                        <table id="table table-striped">
+                            <thead>
+                              <tr>
+                                <th class="text-center">Parameter</th>
+                                <th class="text-center">Scale 1</th>
+                                <th class="text-center">Scale 2</th>
+                                <th class="text-center">Scale 3</th>
+                                <th class="text-center">Scale 4</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="col-md-2">Ekspresi Wajah</td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="opt_reflek_patella" >Normal
+                                </label></td>
+                                <td class="text-center">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="opt_reflek_patella" >Mengencang sebagian (alis mengerut)
+                                    </label>
+                                </td>
+                                <td class="text-center">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="opt_reflek_patella" >Mengencang total (kelopak mata mengatup rapat)
+                                    </label>
+                                </td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="opt_reflek_patella" >Menangis
+                                </label></td>
+                              </tr>
+                              <tr>
+                                <td class="col-md-2">Ekstremitas atas</td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="another" >Tidak ada pergerakan
+                                </label></td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="another" >Tertekuk sebagian
+                                </label></td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="another" >Tertekuk total dengan fleksi jari
+                                </label></td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="another" >Retraksi permanen
+                                </label></td>
+                              </tr>
+                              <tr>
+                                <td class="col-md-2">Compliance terhadap ventilator</td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="other" >Toleransi terhadap ventilator
+                                </label></td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="other" >Sesekali terbatuk, namun masih toleransi terhadap ventilator
+                                </label></td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="other" >Melawan ventilator
+                                </label></td>
+                                <td class="text-center"><label class="radio-inline">
+                                    <input type="radio" name="other" >Tidak dapat mengendalikan pola napas
+                                </label></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row mt-4 text-center">
+                        <h4>PENILAIAN RISIKO JATUH PASIEN DEWASA > 18 Th (Fall Morse Scale)</h4>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-1">
+                            1.
+                        </div>
+                        <div class="col-md-3">
+                            <p>Riwayat jatuh yang baru atau dalam 3 bulan terakhir</p>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="penilaian_risiko" id="penilaian1" class="form-control">
+                                <option selected disabled>Pilih Opsi</option>
+                                <option value="0">Tidak</option>
+                                <option value="25">ya</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input id="sub_total1" name="sub_total" class="form-control" type="text" disabled>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-1">
+                            2.
+                        </div>
+                        <div class="col-md-3">
+                            <p>Diagnosis Medis Sekunder > 1</p>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="penilaian_risiko" id="penilaian2" class="form-control">
+                                <option selected disabled>Pilih Opsi</option>
+                                <option value="0">Tidak</option>
+                                <option value="15">ya</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input id="sub_total2" name="sub_total" class="form-control" type="text" disabled>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-1">
+                            3.
+                        </div>
+                        <div class="col-md-3">
+                            <p>Menggunakan alat bantu jalan</p>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="penilaian_risiko" id="penilaian3" class="form-control">
+                                <option selected disabled>Pilih Opsi</option>
+                                <option value="0">Bed rest/dibantu perawat</option>
+                                <option value="15">Penopang/tongkat/walker</option>
+                                <option value="30">Menggunakan furnitur</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input id="sub_total3" name="sub_total" class="form-control" type="text" disabled>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-1">
+                            4.
+                        </div>
+                        <div class="col-md-3">
+                            <p>Menggunakan infus</p>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="penilaian_risiko" id="penilaian4" class="form-control">
+                                <option selected disabled>Pilih Opsi</option>
+                                <option value="0">Tidak</option>
+                                <option value="15">Ya</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input id="sub_total4" name="sub_total" class="form-control" type="text" disabled>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-1">
+                            5.
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cara</p>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="penilaian_risiko" id="penilaian5" class="form-control">
+                                <option selected disabled>Pilih Opsi</option>
+                                <option value="0">Normal/bed rest/imobilisasi</option>
+                                <option value="15">Lemah</option>
+                                <option value="20">Terganggu</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input id="sub_total5" name="sub_total" class="form-control" type="text" disabled>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-1">
+                            6.
+                        </div>
+                        <div class="col-md-3">
+                            <p>Status mental</p>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="penilaian_risiko" id="penilaian6" class="form-control">
+                                <option selected disabled>Pilih Opsi</option>
+                                <option value="0">Orientasi sesuai kemampuan diri</option>
+                                <option value="15">Lupa keterbatasan diri</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input id="sub_total6" name="sub_total" class="form-control" type="text" disabled>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col">
+                            <input id="total_skor" class="form-control" type="text" placeholder="Total" disabled>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <h4 class="text-center">DIAGNOSA</h4>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <h4 class="text-center">PENATAAKSANAAN</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <p>jam</p>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-success" id="btn-plus">+</button>
+                            {{-- <button class="btn btn-danger">-</button> --}}
+                        </div>
+                    </div>
+                    <div class="row mt-5 justify-content-center text-center">
+                        <div class="col-md-6 text-right">
+                            <button id="btn-tab-2-prev" style="width: 120px;" type="button" class="btn btn-primary ">Previous</button>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <button id="btn-tab-2-next" style="width: 120px;" type="button" class="btn btn-primary ">Next</button>
+                        </div>
+                    </div>
                 </div>
+
+
                 {{-- end tab 2 --}}
+
+                {{-- start tab 3--}}
+                <div class="tab" id="tab-3">
+                    <div class="row mt-4">
+                        <h3 class="text-center">ASESMEN DOKTER</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>S (Anamnesa) :</p>
+                        </div>
+                        <div class="col">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p>O (Obyektif) :</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>Pemereksiaan Umum :</p>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">mmHg</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Suhu" aria-label="Suhu" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">°C</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nadi" aria-label="Nadi" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">x/m</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="RR" aria-label="RR" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">x/m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Pemeriksaan Fisik :</p>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>K / L :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>Thorax :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>Abdomen :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <p>Pemeriksaan Khusus :</p>
+                    </div>
+                    <div class="row">
+                        <textarea class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
+                    <div class="row mt-2">
+                        <p>Pemeriksaan Fisik :</p>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>Lab :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>USG :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>Lainnya :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <h4>A (Diagnosa) :</h4>
+                        </div>
+                        <div class="col">
+                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h4>P (Penatalaksanaan dan Terapi)</h4>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <input type="datetime-local" class="form-control" name="" id="">
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Intruksi dan Terapi">
+                                <label for="floatingInput">Intruksi dan Terapi</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="TT dan Nama Dokter">
+                                <label for="floatingInput">TT dan Nama Dokter</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <p>Hasil Akhir</p>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2">
+                                    <p>keluar PONEK</p>
+                                </div>
+                                <div class="col-md-1">
+                                    :
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="datetime-local" class="form-control" name="" id="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <p>Dengan tindak lanjut pelayanan :</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Dirawat di ruangan">
+                                        <label for="floatingInput">Dirawat di ruangan</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Kelas">
+                                        <label for="floatingInput">Kelas</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="discharge" placeholder="discharge planning">
+                                        <div class="input-group-append">
+                                          <span class="input-group-text" id="basic-addon2">Hari</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Dirawat di ruangan">
+                                        <label for="floatingInput">Kamar Operasi</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="datetime-local" name="" id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Dirawat di ruangan">
+                                        <label for="floatingInput">Rujuk ke</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-2">
+                                    <p>Alasan rujuk</p>
+                                </div>
+                                <div class="col-md-1">:</div>
+                                <div class="col-md-2">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="alasan_rujuk">Indikasi Medis
+                                    </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="alasan_rujuk">Tempat Penuh
+                                    </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="alasan_rujuk">Permintaan pasien
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2">
+                                    <p>Pulang</p>
+                                </div>
+                                <div class="col-md-1">
+                                    :
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="pulang">Indikasi Medis
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="pulang">Atas permintaan sendiri
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2"></div>
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="discharge" placeholder="Kontrol berobat jalan pada poli">
+                                        <div class="input-group-append">
+                                          <span class="input-group-text" id="basic-addon2">Hari</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <input type="date" class="form-control" name="" id="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2"></div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Menolak rawat inap / tindakan dengan alasan">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-3">
+                                    <p>Meninggal dunia</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="datetime-local" name="" class="form-control" id="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-3">
+                                    <p>DOA</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="datetime-local" name="" class="form-control" id="">
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <input type="text" class="form-control" placeholder="Lain-lain">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 text-center">
+                        <div class="col">
+                            <button id="btn-tab-3-prev" type="button" class="btn btn-primary">Previous</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -1072,47 +1687,50 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
+    $(document).ready(function () {
+
+
         // default condition
-            // $(".tab").css("display", "none")
-            //     $("#tab-1").css("display", "block");
-            //     $("#step-1").css("opacity", "1");
+            $(".tab").css("display", "none")
+                $("#tab-1").css("display", "block");
+                $("#step-1").css("opacity", "1");
 
-            //     function run(hideTab, showTab) {
-            //         if(hideTab < showTab){ // if not press previous
-            //             let current = 0;
-            //             x = $('#tab-'+hideTab);
-            //         }
+                function run(hideTab, showTab) {
+                    if(hideTab < showTab){ // if not press previous
+                        let current = 0;
+                        x = $('#tab-'+hideTab);
+                    }
 
-            //         // Progress bar
-            //         for (i = 1; i <= showTab; i++){
-            //             $("#step-"+i).css("opacity", "1");
+                    // Progress bar
+                    for (i = 1; i <= showTab; i++){
+                        $("#step-"+i).css("opacity", "1");
 
-            //         }
+                    }
 
-            //         // Switch tab
-            //         $("#tab-"+hideTab).css("display", "none");
-            //         $("#tab-"+showTab).css("display", "block");
-            //         $(this).scrollTop(0);
+                    // Switch tab
+                    $("#tab-"+hideTab).css("display", "none");
+                    $("#tab-"+showTab).css("display", "block");
+                    $(this).scrollTop(0);
 
-            //     }
+                }
 
-            //     // tab 1
-            //     $('#btn-tab-1').click(function() {
-            //         run(1, 2);
-            //     });
+                // tab 1
+                $('#btn-tab-1').click(function() {
+                    run(1, 2);
+                });
 
-            //     // tab 2
-            //     $('#btn-tab-2-prev').click(function() {
-            //         run(2, 1);
-            //     });
-            //     $('#btn-tab-2-next').click(function() {
-            //         run(2, 3);
-            //     });
+                // tab 2
+                $('#btn-tab-2-prev').click(function() {
+                    run(2, 1);
+                });
+                $('#btn-tab-2-next').click(function() {
+                    run(2, 3);
+                });
 
-            //     // tab 2
-            //     $('#btn-tab-3-prev').click(function() {
-            //         run(3, 2);
-            //     });
+                // tab 3
+                $('#btn-tab-3-prev').click(function() {
+                    run(3, 2);
+                });
 
             $("#opsiada").hide();
 
@@ -1148,6 +1766,27 @@
                 }
 
             });
+
+
+            function findTotal() {
+                let arr = $(`[name='sub_total']`);
+                let tot = 0;
+                for(let i=0;i<arr.length;i++) {
+                    if(parseInt(arr[i].value))
+                        tot += parseInt(arr[i].value);
+                }
+                let subTotal = $('#total_skor').val(tot)
+            }
+
+            for (let i= 1; i <= 6; i++) {
+                $("#penilaian"+i).change(function (e) {
+                    e.preventDefault();
+                    $("#sub_total"+i).val($("#penilaian"+i).val());
+                    findTotal();
+                });
+            }
+
+    });
     </script>
     @endsection
 

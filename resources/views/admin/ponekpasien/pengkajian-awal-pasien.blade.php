@@ -1378,9 +1378,8 @@
                         </div>
                     </div>
                 </div>
-
-
                 {{-- end tab-3 --}}
+
             </div>
         </div>
     </div>
@@ -1436,9 +1435,12 @@
                     run(2, 3);
                 });
 
-                // tab 2
+                // tab 3
                 $('#btn-tab-3-prev').click(function() {
                     run(3, 2);
+                });
+                $('#btn-tab-3-next').click(function() {
+                    run(3, 4);
                 });
 
 
