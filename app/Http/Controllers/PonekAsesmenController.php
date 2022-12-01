@@ -8,6 +8,6 @@ class PonekAsesmenController extends Controller
 {
     public function index()
     {
-        return view('admin.ponekasesmen.ponek-asesmen-pasien');
+        return view('admin.rme-ponek.ponekasesmen.ponek-asesmen-pasien');
     }
 }

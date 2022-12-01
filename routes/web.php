@@ -5,8 +5,10 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DokterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PonekBayiController;
+use App\Http\Controllers\AsesmenBayiController;
 use App\Http\Controllers\PonekPasienController;
 use App\Http\Controllers\PonekAsesmenController;
+use App\Http\Controllers\AsesmenPerawatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +29,8 @@ Route::get('/admin/dokter' , [DokterController::class , 'index' ] );
 Route::resource('/admin/ponekbayi', PonekBayiController::class);
 Route::resource('/admin/ponekpasien', PonekPasienController::class);
 Route::resource('/admin/ponekasesmen', PonekAsesmenController::class);
+Route::resource('/admin/asesmenbayi', AsesmenBayiController::class);
+Route::resource('/admin/asesmenperawat', AsesmenPerawatController::class);
 
 Route::get('/login', [LoginController::class, 'index']);
 

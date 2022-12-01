@@ -8,6 +8,6 @@ class PonekPasienController extends Controller
 {
     public function index()
     {
-        return view('admin.ponekpasien.pengkajian-awal-pasien');
+        return view('admin.ponek.ponekpasien.pengkajian-awal-pasien');
     }
 }

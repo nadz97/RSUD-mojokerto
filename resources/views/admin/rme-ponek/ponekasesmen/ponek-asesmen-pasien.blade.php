@@ -1397,14 +1397,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2">
-                            <p>S (Anamnesa) :</p>
+                            <h4>S (Anamnesa) :</h4>
                         </div>
                         <div class="col">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <p>O (Obyektif) :</p>
+                        <h4>O (Obyektif) :</h4>
                     </div>
                     <div class="row">
                         <div class="col-md-3">

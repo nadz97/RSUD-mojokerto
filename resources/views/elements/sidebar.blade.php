@@ -3,13 +3,43 @@
 				<ul class="metismenu" id="menu">
                     <li><a class="has-arrow ai-icon" href="javascript:void(0);" aria-expanded="false">
 							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">PONEK</span>
+							<span class="nav-text">PONEK baru</span>
 						</a>
                         <ul aria-expanded="false">
 							{{-- <li><a href="{!! url('index'); !!}">Dashboard</a></li> --}}
 							<li><a href="{{ url('/admin/ponekbayi') }}">Pengkajian awal bayi</a></li>
 							<li><a href="{{ url('/admin/ponekpasien') }}">Pengkajian awal pasien</a></li>
+							{{-- <li><a href="{{ url('/admin/ponekasesmen') }}">Asesmen pasien kebidanan</a></li> --}}
+							{{-- <li><a href="{!! url('doctors-details'); !!}">Doctors Details</a></li>
+							<li><a href="{!! url('doctors-review'); !!}">Doctors Review</a></li>
+							<li><a href="{!! url('patient-details'); !!}">Patient Details</a></li> --}}
+						</ul>
+
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void(0);" aria-expanded="false">
+							<i class="flaticon-381-heart"></i>
+							<span class="nav-text">RME PONEK</span>
+						</a>
+                        <ul aria-expanded="false">
+							{{-- <li><a href="{!! url('index'); !!}">Dashboard</a></li> --}}
+							{{-- <li><a href="{{ url('/admin/ponekbayi') }}">Pengkajian awal bayi</a></li> --}}
+							<li><a href="{{ url('/admin/asesmenbayi') }}">Asesmen awal bayi baru lahir</a></li>
 							<li><a href="{{ url('/admin/ponekasesmen') }}">Asesmen pasien kebidanan</a></li>
+							{{-- <li><a href="{!! url('doctors-details'); !!}">Doctors Details</a></li>
+							<li><a href="{!! url('doctors-review'); !!}">Doctors Review</a></li>
+							<li><a href="{!! url('patient-details'); !!}">Patient Details</a></li> --}}
+						</ul>
+
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void(0);" aria-expanded="false">
+							<i class="flaticon-381-heart"></i>
+							<span class="nav-text">RI PONEK</span>
+						</a>
+                        <ul aria-expanded="false">
+							{{-- <li><a href="{!! url('index'); !!}">Dashboard</a></li> --}}
+							{{-- <li><a href="{{ url('/admin/ponekbayi') }}">Pengkajian awal bayi</a></li> --}}
+							<li><a href="{{ url('/admin/asesmenperawat') }}">Asesmen Perawat</a></li>
+							{{-- <li><a href="{{ url('/admin/ponekasesmen') }}">Asesmen pasien kebidanan</a></li> --}}
 							{{-- <li><a href="{!! url('doctors-details'); !!}">Doctors Details</a></li>
 							<li><a href="{!! url('doctors-review'); !!}">Doctors Review</a></li>
 							<li><a href="{!! url('patient-details'); !!}">Patient Details</a></li> --}}
