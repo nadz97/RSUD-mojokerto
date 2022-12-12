@@ -15,6 +15,47 @@
 @endpush
 
 @section('content')
+    <style>
+        .step{
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            background: #450B5A;
+            color: white;
+            border-radius: 50%;
+            line-height: 60px;
+            text-align: center;
+            margin: 0;
+            opacity: 0.25;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-weight: 600;
+        }
+        .line{
+            height: 2px;
+            width: 40px;
+            background-color: #bbb;
+            text-align: center;
+
+            margin: 28px 0px;
+            padding: 0px;
+            }
+
+    </style>
+
+    <div class="d-flex justify-content-center">
+        <span class="step" id="step-1">1</span>
+        <span class="line"></span>
+        <span class="step" id="step-2">2</span>
+        <span class="line"></span>
+        <span class="step" id="step-3">3</span>
+        <span class="line"></span>
+        <span class="step" id="step-4">4</span>
+        <span class="clear"></span>
+
+    </div>
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
@@ -570,7 +611,7 @@
                                 </div>
                             </div>
                         </div>
-
+                    </div>
                     {{-- start sistem pernafasan --}}
                     <div class="row">
                         <div class="row-md-3">
@@ -1832,15 +1873,197 @@
                     </div>
 
                     {{-- button --}}
-                    <div class="row text-center mt-5">
-                        <div class="col">
+                    <div class="row text-center">
+                        <div class="col-md-6">
                             <button id="btn-tab-3-prev" type="button" class="btn btn-primary">Previous</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button id="btn-tab-3-next" type="button" class="btn btn-primary">Next</button>
                         </div>
                     </div>
                     {{-- button --}}
 
                 </div>
                 {{-- end tab 3 --}}
+
+                {{-- start tab 4 --}}
+                <div class="tab m-4" id="tab-4">
+                    <div class="row mt-4">
+                        <h4 class="centeredtext">ASESMEN DOKTER</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h5>S (Anamnesa) :</h5>
+                        </div>
+                        <div class="col">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <h5>O (Obyektif) :</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>Pemereksiaan Umum :</p>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">mmHg</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Suhu" aria-label="Suhu" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">°C</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nadi" aria-label="Nadi" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">x/m</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="RR" aria-label="RR" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">x/m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Pemeriksaan Fisik :</p>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>K / L :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>Thorax :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>Abdomen :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <p>Pemeriksaan Khusus :</p>
+                    </div>
+                    <div class="row">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
+                    <div class="row mt-2">
+                        <p>Pemeriksaan Fisik :</p>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <p>Lab :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>USG :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>Lainnya :</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <h5>A (Diagnosa) :</h5>
+                        </div>
+                        <div class="col">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <h5>P (Penatalaksanaan) :</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>Diagnosa :</p>
+                        </div>
+                        <div class="col">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>Terapi :</p>
+                        </div>
+                        <div class="col">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>Monitoring :</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>Diit :</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p>Konsul :</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <p><i>Discharge Planning</i> :</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <button id="btn-tab-4-prev" type="button" class="btn btn-primary">Previous</button>
+                        </div>
+                    </div>
+                </div>
+                {{-- end tab 4 --}}
             </div>
         </div>
     </div>
@@ -1871,7 +2094,6 @@
                     // Progress bar
                     for (i = 1; i <= showTab; i++) {
                         $("#step-" + i).css("opacity", "1");
-
                     }
 
                     // Switch tab
@@ -1894,10 +2116,19 @@
                     run(2, 3);
                 });
 
-                // tab 2
+                // tab 3
                 $('#btn-tab-3-prev').click(function() {
                     run(3, 2);
                 });
+                $('#btn-tab-3-next').click(function() {
+                    run(3, 4);
+                });
+
+                // tab 4
+                $('#btn-tab-4-prev').click(function() {
+                    run(4, 3);
+                });
+
 
                 const checkbox = $('#faktorlain');
                 const checkbox2 = $('#optobat');

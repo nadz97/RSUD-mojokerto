@@ -15,6 +15,45 @@
 @endpush
 
 @section('content')
+<style>
+    .step{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        background: #450B5A;
+        color: white;
+        border-radius: 50%;
+        line-height: 60px;
+        text-align: center;
+        margin: 0;
+        opacity: 0.25;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-weight: 600;
+    }
+    .line{
+        height: 2px;
+        width: 40px;
+        background-color: #bbb;
+        text-align: center;
+
+        margin: 28px 0px;
+        padding: 0px;
+        }
+
+</style>
+
+<div class="d-flex justify-content-center">
+    <span class="step" id="step-1">1</span>
+    <span class="line"></span>
+    <span class="step" id="step-2">2</span>
+    <span class="line"></span>
+    <span class="step" id="step-3">3</span>
+    <span class="clear"></span>
+
+</div>
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
@@ -801,7 +840,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="row">
+                        <div class="row mt-4">
                             <h4>Sistem Endokrin</h4>
                         </div>
                     </div>

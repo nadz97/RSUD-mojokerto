@@ -3,7 +3,7 @@
 				<ul class="metismenu" id="menu">
                     <li><a class="has-arrow ai-icon" href="javascript:void(0);" aria-expanded="false">
 							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">PONEK baru</span>
+							<span class="nav-text">PONEK</span>
 						</a>
                         <ul aria-expanded="false">
 							{{-- <li><a href="{!! url('index'); !!}">Dashboard</a></li> --}}
@@ -14,7 +14,6 @@
 							<li><a href="{!! url('doctors-review'); !!}">Doctors Review</a></li>
 							<li><a href="{!! url('patient-details'); !!}">Patient Details</a></li> --}}
 						</ul>
-
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void(0);" aria-expanded="false">
 							<i class="flaticon-381-heart"></i>
@@ -28,8 +27,27 @@
 							{{-- <li><a href="{!! url('doctors-details'); !!}">Doctors Details</a></li>
 							<li><a href="{!! url('doctors-review'); !!}">Doctors Review</a></li>
 							<li><a href="{!! url('patient-details'); !!}">Patient Details</a></li> --}}
+                            <li><a href="{{ URL::to('/admin/igd/formulir_triage') }}"> Folmulir Triage PONEK </a></li>
+                            <li><a href="{{ URL::to('/admin/rme-ponek/pengkajian_bayi') }}"> Pengkajian PONEK </a></li>
+                            <li><a href="{{ URL::to('/admin/rme-ponek/edukasi_ponek') }}"> Edukasi PONEK </a></li>
+                            <li><a href="{{ URL::to('/admin/rme-ponek/edukasipasien_ponek') }}"> Edukasi Pasien PONEK</a></li>
+                            <li><a href="{{ URL::to('/admin/rme-ponek/identifikasi_bayi') }}"> Identifikasi Bayi</a></li>
+                            <li><a href="{!! url('doctors-details'); !!}"> Konsultasi </a></li>
+                            <li><a href="{{ URL::to('/admin/rme-ponek/penempelan_surat') }}"> Penempelan </a></li>
 						</ul>
 
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void(0);" aria-expanded="false">
+                            <i class="flaticon-381-networking"></i>
+                            <span class="nav-text"> IGD </span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ URL::to('/admin/igd/triage_igd') }}"> Folmulir Triage IGD </a></li>
+                            <li><a href="{{ URL::to('/admin/igd/pengkajian_igd') }}"> Pengkajian IGD </a></li>
+                            <li><a href="{{ URL::to('/admin/igd/edukasi_pasien') }}"> Edukasi Pasien </a></li>
+                            <li><a href="{{ URL::to('/admin/igd/konsultasi') }}"> Konsultasi </a></li>
+                            <li><a href="{{ URL::to('/admin/igd/penempelan_surat') }}"> Penempelan </a></li>
+                        </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void(0);" aria-expanded="false">
 							<i class="flaticon-381-heart"></i>
